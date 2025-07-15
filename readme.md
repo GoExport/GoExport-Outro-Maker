@@ -6,7 +6,7 @@ This tool is designed to work with GoExport, it allows for you to create custom 
 
 To get GoExport, visit the [GoExport Website](https://goexport.lexian.dev).
 
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/GoExport/GoExport/total?cacheBuster=true)
-![GitHub License](https://img.shields.io/github/license/GoExport/GoExport?cacheBuster=true)
-![GitHub Release](https://img.shields.io/github/v/release/GoExport/GoExport?include_prereleases&cacheBuster=true)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/GoExport/GoExport-Outro-Maker/total?cacheBuster=true)
+![GitHub License](https://img.shields.io/github/license/GoExport/GoExport-Outro-Maker?cacheBuster=true)
+![GitHub Release](https://img.shields.io/github/v/release/GoExport/GoExport-Outro-Maker?include_prereleases&cacheBuster=true)
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ejwJYtQDrS)
