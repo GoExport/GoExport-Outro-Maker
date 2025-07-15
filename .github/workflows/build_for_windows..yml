@@ -51,13 +51,13 @@ jobs:
 
       - name: Create zip of dist folder
         run: |
-          Compress-Archive -Path dist\* -DestinationPath dist\app.zip
+          Compress-Archive -Path dist\* -DestinationPath dist/app.zip
 
       - name: Upload Release Asset
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
-          files: dist\app.zip
+          files: dist/app.zip
           prerelease: ${{ startsWith(github.ref_name, 'b') }}
           generate_release_notes: true
         env:
