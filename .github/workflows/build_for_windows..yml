@@ -35,7 +35,7 @@ jobs:
 
       - name: Package Application with PyInstaller
         run: |
-          pyinstaller GoExport.spec
+          pyinstaller "GoExport Outro Maker.spec"
 
       - name: Copy files to dist folder
         run: |
