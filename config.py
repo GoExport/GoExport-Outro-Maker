@@ -22,34 +22,34 @@ AVAILABLE_ASPECT_NAMES = {
 AVAILABLE_SIZES = {
     # 4:3
     "4:3": {
-        "320x240": (320, 240, False, "standard"),
-        "480x360": (480, 360, False, "standard"),
-        "560x420": (560, 420, False, "standard"),
-        "640x480": (640, 480, False, "standard"),
+        "240p": (320, 240, False, "standard"),
+        "360p": (480, 360, False, "standard"),
+        "420p": (560, 420, False, "standard"),
+        "480p": (640, 480, False, "standard"),
     },
 
     # 14:9
     "14:9": {
-        "640x432": (640, 432, False, "classic"),
-        "720x480": (720, 480, False, "classic"),
-        "768x576": (768, 576, False, "classic"),
-        "848x576": (848, 576, False, "classic"),
+        "432p": (640, 432, False, "classic"),
+        "480p": (720, 480, False, "classic"),
+        "576p": (768, 576, False, "classic"),
+        "576p": (848, 576, False, "classic"),
     },
 
     # 16:9
     "16:9": {
-        "640x360": (640, 360, True, "wide"),
-        "854x480": (854, 480, True, "wide"),
-        "1280x720": (1280, 720, True, "wide"),
-        "1920x1080": (1920, 1080, True, "wide"),
+        "360p": (640, 360, True, "wide"),
+        "480p": (854, 480, True, "wide"),
+        "720p": (1280, 720, True, "wide"),
+        "1080p": (1920, 1080, True, "wide"),
     },
 
     # 9:16
     "9:16": {
-        "360x640": (360, 640, False, "tall"),
-        "480x854": (480, 854, False, "tall"),
-        "720x1280": (720, 1280, False, "tall"),
-        "1080x1920": (1080, 1920, False, "tall"),
+        "360p": (360, 640, False, "tall"),
+        "480p": (480, 854, False, "tall"),
+        "720p": (720, 1280, False, "tall"),
+        "1080p": (1080, 1920, False, "tall"),
     },
 }
 
