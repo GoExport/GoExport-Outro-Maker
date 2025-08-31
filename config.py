@@ -1,6 +1,6 @@
 # Configuration
 APP_NAME = "GoExport Outro Maker"
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.1.0"
 APP_BETA = False
 DEFAULT_DEPENDENCIES_FILENAME = "dependencies"
 DEFAULT_OUTPUT_FILENAME = "data"
