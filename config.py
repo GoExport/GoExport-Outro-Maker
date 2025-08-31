@@ -30,10 +30,10 @@ AVAILABLE_SIZES = {
 
     # 14:9
     "14:9": {
-        "432p": (640, 432, False, "classic"),
-        "480p": (720, 480, False, "classic"),
-        "576p": (768, 576, False, "classic"),
-        "576p": (848, 576, False, "classic"),
+        "360p": (640, 360, False, "classic"),
+        "480p": (854, 480, False, "classic"),
+        "720p": (1280, 720, False, "classic"),
+        "1080p": (1920, 1080, False, "classic"),
     },
 
     # 16:9
