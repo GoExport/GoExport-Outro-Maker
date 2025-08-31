@@ -46,12 +46,8 @@ jobs:
 
       - name: Copy required files to dist
         run: |
-          mkdir -p dist/assets
-          mkdir -p dist/server
           cp readme.md dist/
           cp LICENSE dist/
-          cp -r assets/* dist/assets/
-          cp -r server/* dist/server/
 
       - name: Archive Linux Build
         if: matrix.os == 'ubuntu-latest'
