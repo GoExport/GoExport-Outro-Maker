@@ -42,6 +42,10 @@ AVAILABLE_SIZES = {
         "480p": (854, 480, True, "wide"),
         "720p": (1280, 720, True, "wide"),
         "1080p": (1920, 1080, True, "wide"),
+        "2k": (2560, 1440, True, 'wide'),
+        "4k": (3840, 2160, True, 'wide'),
+        "5k": (5120, 2880, True, 'wide'),
+        "8k": (7680, 4320, True, 'wide'),
     },
 
     # 9:16
