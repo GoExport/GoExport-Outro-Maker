@@ -9,7 +9,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-22.04, windows-latest]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,7 +25,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Download additional dependencies (Linux)
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-22.04'
         run: |
           curl -L -o ffmpeg.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz
           mkdir -p dependencies
@@ -50,7 +50,7 @@ jobs:
           cp LICENSE dist/
 
       - name: Archive Linux Build
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-22.04'
         run: |
           tar -czvf goexport_outro_maker_linux.tar.gz -C dist .
           mv goexport_outro_maker_linux.tar.gz dist/
@@ -69,7 +69,7 @@ jobs:
           if-no-files-found: ignore
 
   changelog:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: build
     outputs:
       changelog: ${{ steps.extract.outputs.changelog }}
@@ -84,7 +84,7 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
 
   release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: changelog
     steps:
       - name: Download all artifacts
@@ -107,7 +107,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   discord_notify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: [changelog, release]
     steps:
       - name: Notify Discord
