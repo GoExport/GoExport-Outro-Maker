@@ -34,10 +34,10 @@ AVAILABLE_SIZES = {
         "480p": (854, 480, False, "classic"),
         "720p": (1280, 720, False, "classic"),
         "1080p": (1920, 1080, False, "classic"),
-        "2k": (2560, 1440, True, 'wide'),
-        "4k": (3840, 2160, True, 'wide'),
-        "5k": (5120, 2880, True, 'wide'),
-        "8k": (7680, 4320, True, 'wide'),
+        "2k": (2560, 1440, True, 'classic'),
+        "4k": (3840, 2160, True, 'classic'),
+        "5k": (5120, 2880, True, 'classic'),
+        "8k": (7680, 4320, True, 'classic'),
     },
 
     # 16:9
